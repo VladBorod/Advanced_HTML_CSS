@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,33 +19,10 @@
                     <img class="logo_img" src="/img/logo_image.jpg" alt="logo image">BRAN<span class="logo_pink">D</span>
                 </a>
                 <form class="form_header center" action="#">
-                    <button id="btnDrop1" type="button" class="btn_browse">
-                        <div class="btn_browse_text">Browse</div>
-                        <div class="menu__elements">
-                            <h2 class="menu__title">WOMEN</h2>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link">Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <a href="#" class="menu__item_link">Blazers</a>
-                                <a href="#" class="menu__item_link">Denim</a>
-                                <a href="#" class="menu__item_link">Leggings/Pants</a>
-                                <a href="#" class="menu__item_link">Skirts/Shorts</a>
-                                <a href="#" class="menu__item_link">Accessories</a>
-                            <h2 class="menu__title">MEN</h2>
-                                <a href="#" class="menu__item_link">Tees/Tank tops</a>
-                                <a href="#" class="menu__item_link">Shirts/Polos</a>
-                                <a href="#" class="menu__item_link">Sweaters</a>
-                                <a href="#" class="menu__item_link">Sweatshirts/Hoodies</a>
-                                <a href="#" class="menu__item_link">Blazers</a>
-                                <a href="#" class="menu__item_link">Jackets/vests</a>
-                            
-                        </div>
-                    </button>
+                    <button id="btnDrop1" type="button" class="btn_browse"><div class="btn_browse_text">Browse</div> <img class="btn_arrow" src="/img/browse_btn_arrow.jpg" alt="arrow"></button>
                     <input class="input_browse" type="text" placeholder="  Search for items...">
                     <button class="btn_search" id="btn_search" type="submit"> 
-                    <img class="btn_search_img" src="/img/btn_serch.png" alt="">
-                </button>
+                    <img class="btn_search_img" src="/img/btn_serch.png" alt=""></button>
                 </form>
             </div>
             <div class="header_right center">
@@ -191,95 +171,149 @@
             <a href="#" class="breadcrumbs__link breadcrumbs__link_site">NEW ARRIVALS</a>
         </div>
     </section>
-    <section class="carousel-box center">
-        <div class="carousel center">
-            <a class="carousel__move" href="#"><img class="carousel__arrows" src="/img/singleArrowLeft.png" alt=""></a>
-            <div class="carousel__img center">
-                <img src="/img/singleMainWomanPic.png" alt="showroom images">
-            </div>
-            <a class="carousel__move" href="#"><img class="carousel__arrows" src="/img/singleArrowRight.png" alt=""></a>
+    <section class="product-details center">
+        <div class="product-details__head">
+            <p class="product-details__left">PRODUCT DETAILS</p>
+            <p class="product-details__right"></p>
+            <p class="product-details__right">UNITE PRICE</p>
+            <p class="product-details__right">QUANTITY</p>
+            <p class="product-details__right">SHIPPING</p>
+            <p class="product-details__right">SUBTOTAL</p>
+            <p class="product-details__right">ACTION</p>
         </div>
-    </section>
-    <section class="control-box center">
-        <div class="control__upper">
-            <h2 class="control__upper_h2">WOMEN COLLECTION</h2>
-            <a class="control__upper_a" href="#">
-                <img class="control__upper_a_img" src="/img/singleRectanglePink.png" alt="rectanle for link">
-            </a>
-            <h3 class="control__upper_h3">Moschino Cheap And Chic</h3>
-            <p class="control__upper_p">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-            <div class="control__upper_lateral">
-                <h4 class="control__upper_h4">MATERIAL: <span class="control__upper_span">COTTON</span></h4>
-                <h4 class="control__upper_h4">DESIGNER: <span class="control__upper_span">BINBURHAN</span></h4>
-            </div>
-            <h5 class="control__upper_h5">$561</h5>
-            <div class="control__upper_line">
-            </div>
-            <div class="control__choose-blocks">
-                <div class="control__parts">
-                    <label class="control__text_details">CHOOSE COLOR</label>
-                    <select id="select-color" class="control__details">
-                            <option value="red"><img src="/img/redSquare.png" alt="red square"> Red</option>
-                            <option value="blue"><img src="/img/blueSquare.png" alt="blue square"> Blue</option>
-                            <option value="pink"><img src="/img/pinkSquare.png" alt="pink square"> Pink</option>
-                            <option value="black"><img src="/img/blackSquare.png" alt="black square"> Black</option>
-                        </select>
+        <div class="product-details__product center">
+            <div class="product-details__details">
+                <div class="product-details__name">
+                    <img class="product-details__img" src="/img/shoppingImg1.png" alt="your product">
+                    <div class="product-details__title">
+                        Mango People T-shirt
+                        <div class="product-details__description">
+                            <p>Color: <span class="product-details__description__span"> Red</span> </p>
+                            <p>Size: <span class="product-details__description__span"> Xll</span></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="control__parts">
-                    <label class="control__text_details">CHOOSE SIZE</label>
-                    <select id="select-size" class="control__details">
-                            <option value="red">XXL</option>
-                            <option value="blue">XL</option>
-                            <option value="pink">L</option>
-                            <option value="black">M</option>
-                            <option value="black">S</option>
-                            <option value="black">XS</option>
-                        </select>
+                <div class="product-details__unite-price">
+                    <p>$150</p>
                 </div>
-                <div class="control__parts">
-                    <label class="control__text_details">QUANTITY</label>
-                    <input id="quantity" type="number" placeholder="1" required="required" class="control__quantity">
+                <div class="product-details__quantity">
+                    2
+                </div>
+                <div class="product-details__shipping">
+                    FREE
+                </div>
+                <div class="product-details__subtotal">
+                    $300
+                </div>
+                <div class="product-details__action">
+                    <img src="/img/removerImg.png" alt="cross">
                 </div>
             </div>
-            <div class="control__add_to_btn">
-                <img class="control__add_to_btn_img" src="/img/addToBtnBacket.png" alt="backet">
-                <p class="control__add_to_btn_p">Add to Cart</p>
-            </div>
-        </div>
-    </section>
-    <section class="maylike center">
-        <h2 class="maylike__h2">you may like also</h2>
-        <div class="maylike__content">
-            <div class="maylike__block">
-                <div class="maylike__back">
-                    <img class="maylike__img" src="/img/maylikeOne.png" alt="woman">
-                </div>
-                <h3 class="maylike__h3">BLAZE LEGGINGS</h3>
-                <p class="maylike__price">$52.00</p>
-            </div>
-            <div class="maylike__block">
-                <div class="maylike__back">
-                    <img class="maylike__img" src="/img/mayLikeTwo.png" alt="">
-                </div>
 
-                <h3 class="maylike__h3">ALEXA SWEATER</h3>
-                <p class="maylike__price">$52.00</p>
-            </div>
-            <div class="maylike__block">
-                <div class="maylike__back">
-                    <img class="maylike__img" src="/img/mayLikeThree.png" alt="">
+        </div>
+        <div class="product-details__product center">
+            <div class="product-details__details">
+                <div class="product-details__name">
+                    <img class="product-details__img" src="/img/shoppingImg2.png" alt="your product">
+                    <div class="product-details__title">
+                        Mango People T-shirt
+                        <div class="product-details__description">
+                            <p>Color: <span class="product-details__description__span"> Red</span> </p>
+                            <p>Size: <span class="product-details__description__span"> Xll</span></p>
+                        </div>
+                    </div>
                 </div>
+                <div class="product-details__unite-price">
+                    <p>$150</p>
+                </div>
+                <div class="product-details__quantity">
+                    2
+                </div>
+                <div class="product-details__shipping">
+                    FREE
+                </div>
+                <div class="product-details__subtotal">
+                    $300
+                </div>
+                <div class="product-details__action">
+                    <img src="/img/removerImg.png" alt="cross">
+                </div>
+            </div>
 
-                <h3 class="maylike__h3">AGNES TOP</h3>
-                <p class="maylike__price">$52.00</p>
+        </div>
+        <div class="product-details__product center">
+            <div class="product-details__details">
+                <div class="product-details__name">
+                    <img class="product-details__img" src="/img/shoppingImg3.png" alt="your product">
+                    <div class="product-details__title">
+                        Mango People T-shirt
+                        <div class="product-details__description">
+                            <p>Color: <span class="product-details__description__span"> Red</span> </p>
+                            <p>Size: <span class="product-details__description__span"> Xll</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details__unite-price">
+                    <p>$150</p>
+                </div>
+                <div class="product-details__quantity">
+                    2
+                </div>
+                <div class="product-details__shipping">
+                    FREE
+                </div>
+                <div class="product-details__subtotal">
+                    $300
+                </div>
+                <div class="product-details__action">
+                    <img src="/img/removerImg.png" alt="cross">
+                </div>
             </div>
-            <div class="maylike__block">
-                <img class="maylike__img_special" src="/img/mayLikeFour.jpg" alt="">
-                <h3 class="maylike__h3">SYLVA SWEATER</h3>
-                <p class="maylike__price">$52.00</p>
-            </div>
+
         </div>
     </section>
+    <section class="clear-shopping-buttons center">
+        <button class="clear-shopping-buttons__clear">CLEAR SHOPPING CART</button>
+        <button class="clear-shopping-buttons__shopping">CONTINUE SHOPPING</button>
+    </section>
+    <section class="user-data center">
+        <div class="user-data__adress">
+            <h2 class="user-data__title">
+                Shipping Adress
+            </h2>
+            <div class="user-data__country-select">
+                <select class="user-data__country-values" name="country" id="selection">
+                    <option value="0">Armenia</option>
+                    <option value="1">Bangladesh</option>
+                    <option value="2">Czech Republick</option>
+                    <option value="3">Denmark</option>
+                    <option value="4">Ephiopia</option>
+                    <option value="5">France</option>
+                    <option value="6">Georgia</option>
+                </select>
+            </div>
+            <input class="user-data__input-state" placeholder="State">
+            <input class="user-data__input-state" placeholder="Postcode / Zip">
+            <button class="user-data__quote-btn">get a quote</button>
+        </div>
+        <div class="user-data__coupon">
+            <h2 class="user-data__title2">
+                coupon discount
+            </h2>
+            <p class="user-data__paraph">Enter your coupon code if you have one</p>
+            <input class="user-data__input-state" placeholder="Coupon">
+            <button class="user-data__coupon-btn">Apply coupon</button>
+        </div>
+        <div class="user-data__total">
+            <div class="user-data__sub-total">
+                Sub total $900
+            </div>
+            <div class="user-data__grand-total">
+                GRAND TOTAL <span class="user-data__grand-total-span">$900</span>
+            </div>
+            <div class="user-data__underline"></div>
+            <button class="user-data__proceed-btn">proceed to checkout</button>
+        </div>
     </section>
     <section class="bot center">
         <div class="bottom center">
@@ -391,9 +425,4 @@
             <img class="footer_links_img" src="/svg/socialLink4.svg" alt="facebook">
         </div>
     </footer>
-
-    </div>
-
 </body>
-
-</html>
