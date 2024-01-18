@@ -1,3 +1,15 @@
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+fieldset {
+  border: 0 none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1561,6 +1573,205 @@ body {
   border: none;
 }
 .user-data__proceed-btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+.checkout {
+  padding-top: 89px;
+  padding-bottom: 890px;
+  width: 1600px;
+  height: 13px;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+}
+.checkout__main {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px;
+}
+.checkout__items {
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.checkout__content {
+  display: flex;
+  flex-direction: row;
+}
+.checkout__guest-or-regist {
+  display: flex;
+  flex-direction: column;
+}
+.checkout__title {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 39px;
+  padding-left: 40px;
+}
+.checkout__paraph {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9f9f9f;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+.checkout__labels {
+  padding-top: 34px;
+  padding-left: 40px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+.checkout__input-guest {
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.checkout__input-guest:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: #F16D7F;
+}
+.checkout__input-regist {
+  margin-top: 20px;
+}
+.checkout__input-regist:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: #F16D7F;
+}
+.checkout__span {
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.checkout__h2 {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-top: 33px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+.checkout__p {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.checkout__p2 {
+  padding-left: 40px;
+  box-sizing: border-box;
+  height: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.checkout__p3 {
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-bottom: 38px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 300px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.checkout__btn-continue {
+  margin-top: 38px;
+  margin-left: 40px;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+.checkout__btn-continue:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+.checkout__btn-continue-span {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+.checkout__forms {
+  padding-left: 349px;
+}
+.checkout__legend-input {
+  padding-left: 40px;
+  padding-top: 27px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+.checkout__legend-input-span {
+  color: red;
+  font-size: 16px;
+  font-weight: 900;
+}
+.checkout__input {
+  margin-left: 40px;
+  margin-top: 16px;
+  padding: 0 10px;
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+.checkout__input:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+.checkout__required-fields {
+  padding-top: 22px;
+  padding-bottom: 32px;
+  padding-left: 40px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: red;
+}
+.checkout__log-in-btn {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+.checkout__log-in-btn:hover {
   transform: scale(1.1);
   transition: 0.3s;
   box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);

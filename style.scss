@@ -42,6 +42,18 @@ $colorBorderGrey: #e6e6e6;
 $colorTextGrey: #9f9f9f;
 $colorTextDarkGrey: #4d4d4d;
 $colorShowroom: #f7f7f7;
+summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+fieldset {
+    border: 0 none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1557,6 +1569,195 @@ body {
         border: none;
     }
     &__proceed-btn:hover {
+        @include hoverBtnSngl();
+    }
+}
+
+.checkout {
+    padding-top: 89px;
+    padding-bottom: 890px;
+    width: 1600px;
+    height: 13px;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    &__main {
+        border-bottom: 1px solid $colorBorderGrey;
+        padding: 20px;
+    }
+    &__items {
+        margin-top: 0px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorBlackMain;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+    }
+    &__guest-or-regist {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $colorBlackMain;
+        box-sizing: border-box;
+        display: block;
+        padding-top: 39px;
+        padding-left: 40px;
+    }
+    &__paraph {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextGrey;
+        box-sizing: border-box;
+        display: block;
+        padding-top: 15px;
+        padding-left: 40px;
+    }
+    &__labels {
+        padding-top: 34px;
+        padding-left: 40px;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $colorBlackMain;
+    }
+    &__input-guest {
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+    &__input-guest:hover {
+        @include hoverTextPink();
+    }
+    &__input-regist {
+        margin-top: 20px;
+    }
+    &__input-regist:hover {
+        @include hoverTextPink();
+    }
+    &__span {
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    &__h2 {
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-top: 33px;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $colorBlackMain;
+    }
+    &__p {
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-top: 33px;
+        padding-bottom: 33px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextGrey;
+    }
+    &__p2 {
+        padding-left: 40px;
+        box-sizing: border-box;
+        height: 20px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextGrey;
+    }
+    &__p3 {
+        padding-top: 5px;
+        padding-left: 40px;
+        padding-bottom: 38px;
+        box-sizing: border-box;
+        height: 20px;
+        width: 300px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextGrey;
+    }
+    &__btn-continue {
+        margin-top: 38px;
+        margin-left: 40px;
+        width: 180px;
+        height: 50px;
+        background-color: $colorBackgroundMain;
+        border: 1px solid $colorBorderGrey;
+    }
+    &__btn-continue:hover {
+        @include hoverBtnSngl();
+    }
+    &__btn-continue-span {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorTextDarkGrey;
+    }
+    &__forms {
+        padding-left: 349px;
+    }
+    &__legend-input {
+        padding-left: 40px;
+        padding-top: 27px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorBlackMain;
+    }
+    &__legend-input-span {
+        color: red;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    &__input {
+        margin-left: 40px;
+        margin-top: 16px;
+        padding: 0 10px;
+        width: 390px;
+        height: 45px;
+        background-color: $colorBackgroundMain;
+        border: 1px solid $colorBorderGrey;
+    }
+    &__input:hover {
+        @include hoverBtnSngl();
+    }
+    &__required-fields {
+        padding-top: 22px;
+        padding-bottom: 32px;
+        padding-left: 40px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: red;
+    }
+    &__log-in-btn {
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 180px;
+        height: 50px;
+        background-color: $colorBackgroundMain;
+        border: 1px solid $colorBorderGrey;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorTextDarkGrey;
+    }
+    &__log-in-btn:hover {
         @include hoverBtnSngl();
     }
 }
