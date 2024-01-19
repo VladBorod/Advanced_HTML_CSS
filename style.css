@@ -162,6 +162,144 @@ body {
   color: #F16D7F;
 }
 
+.btn-drop-left__menu {
+  margin-top: 32px;
+  right: auto;
+  left: auto;
+  width: 262px;
+  height: 440px;
+  background-color: #ffffff;
+  border: 1px solid #4d4d4d;
+  border-radius: 5px;
+  position: absolute;
+}
+.btn-drop-left__product {
+  width: 240px;
+  padding-bottom: 16px;
+  margin-top: 19px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 17px;
+}
+.btn-drop-left__product-img {
+  width: 72px;
+  height: 85px;
+}
+.btn-drop-left__product-img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+.btn-drop-left__product-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.btn-drop-left__product-h3 {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.btn-drop-left__product-stars {
+  display: flex;
+  flex-direction: row;
+}
+.btn-drop-left__product-png {
+  width: 20px;
+  height: 20px;
+}
+.btn-drop-left__product-png:hover {
+  width: 20px;
+  height: 20px;
+  color: gold;
+  background: url(/img/accountStarHover2.png);
+  width: 20px;
+  height: 20px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.btn-drop-left__product-paraph {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #f16d7f;
+  margin-bottom: 10px;
+}
+.btn-drop-left__product-cross {
+  width: 12px;
+  height: 12px;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+.btn-drop-left__product-cross:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: #F16D7F;
+}
+.btn-drop-left__total {
+  margin-top: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.btn-drop-left__buttons {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+.btn-drop-left__checkout {
+  width: 225px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #F16D7F;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F16D7F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-drop-left__checkout:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+.btn-drop-left__cart {
+  width: 225px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9f9f9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-drop-left__cart:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
 .btn_browse_text {
   font-size: 11px;
   line-height: 32px;
@@ -274,8 +412,13 @@ body {
 
 .btn_arrow_acc {
   background-color: #F16D7F;
-  padding-left: 10px;
-  padding-right: 12px;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+.btn_arrow_acc:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {

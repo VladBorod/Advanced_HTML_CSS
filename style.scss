@@ -205,6 +205,142 @@ body {
     }
 }
 
+.btn-drop-left {
+    &__menu {
+        margin-top: 32px;
+        right: auto;
+        left: auto;
+        width: 262px;
+        height: 440px;
+        background-color: $colorBackgroundMain;
+        border: 1px solid $colorTextDarkGrey;
+        border-radius: 5px;
+        position: absolute;
+        // padding-right: 350px;
+        // right: 50px;
+        // left: auto;
+    }
+    &__product {
+        width: 240px;
+        padding-bottom: 16px;
+        margin-top: 19px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid $colorBorderGrey;
+        margin-left: 17px;
+    }
+    &__product-img {
+        width: 72px;
+        height: 85px;
+        &:hover {
+            @include hoverBtnSngl();
+        }
+    }
+    &__product-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 14px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    &__product-h3 {
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorBlackMain;
+    }
+    &__product-stars {
+        display: flex;
+        flex-direction: row;
+    }
+    &__product-png {
+        width: 20px;
+        height: 20px;
+        &:hover {
+            width: 20px;
+            height: 20px;
+            color: gold;
+            background: url(/img/accountStarHover2.png);
+            width: 20px;
+            height: 20px;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+    &__product-paraph {
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        // text-transform: uppercase;
+        color: #f16d7f;
+        margin-bottom: 10px;
+    }
+    &__product-cross {
+        width: 12px;
+        height: 12px;
+        margin-left: 20px;
+        margin-top: 35px;
+        &:hover {
+            @include hoverTextPink();
+        }
+    }
+    &__total {
+        margin-top: 19px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorBlackMain;
+    }
+    &__buttons {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+    }
+    &__checkout {
+        width: 225px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 1px solid $colorPinkMain;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorPinkMain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            @include hoverBtnSngl();
+        }
+    }
+    &__cart {
+        width: 225px;
+        height: 50px;
+        box-sizing: border-box;
+        background-color: $colorBackgroundMain;
+        border: 1px solid $colorBorderGrey;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorTextGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            @include hoverBtnSngl();
+        }
+    }
+}
+
 .btn_browse_text {
     font-size: 11px;
     line-height: 32px;
@@ -309,8 +445,13 @@ body {
 
 .btn_arrow_acc {
     background-color: $colorPinkMain;
-    padding-left: 10px;
-    padding-right: 12px;
+    margin-left: 10px;
+    margin-right: 12px;
+    &:hover {
+        transform: scale(1.5);
+        transition: 0.3s;
+        box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+    }
 }
 
 // NAVIGATION --------------------
