@@ -77,6 +77,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 // HEADER LEFT ------------------------------
@@ -142,6 +143,66 @@ body {
 
 .btn_browse:hover {
     @include hoverBtnSngl();
+}
+
+.btn {
+    &__details {
+        width: 27px;
+        height: 38px;
+        // background-color: $colorTextGrey;
+        // border: 1px solid $colorTextDarkGrey;
+        // position: relative;
+    }
+    &__details summary::before {
+        margin-left: 10px;
+        margin-top: 14px;
+        content: ' ';
+        display: inline-block;
+        background: url(img/detailsArrow.png);
+        height: .8em;
+        width: .8em;
+        background-size: .8em .8em;
+    }
+    &__details[open] summary::before {
+        transform: rotate(90deg);
+    }
+    &__summary {
+        position: absolute;
+        width: 210px;
+        height: 530px;
+        background-color: $colorBackgroundMain;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid $colorTextDarkGrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__summary-title {
+        padding-top: 3px;
+        text-decoration: none;
+        box-sizing: border-box;
+        width: 180px;
+        border-bottom: 1px solid $colorTextGrey;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        background-color: $colorBackgroundMain;
+    }
+    &__summary-link {
+        text-decoration: none;
+        box-sizing: border-box;
+        background-color: $colorBackgroundMain;
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: $colorBlackMain;
+        &:hover {
+            @include hoverTextPink();
+        }
+    }
 }
 
 .btn_browse_text {
@@ -937,9 +998,6 @@ body {
     }
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // SINGLE PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .top-head {
     background-color: $colorPinkBack;

@@ -33,6 +33,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header_left {
@@ -102,6 +103,63 @@ body {
   transform: scale(1.1);
   transition: 0.3s;
   box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn__details {
+  width: 27px;
+  height: 38px;
+}
+.btn__details summary::before {
+  margin-left: 10px;
+  margin-top: 14px;
+  content: " ";
+  display: inline-block;
+  background: url(img/detailsArrow.png);
+  height: 0.8em;
+  width: 0.8em;
+  background-size: 0.8em 0.8em;
+}
+.btn__details[open] summary::before {
+  transform: rotate(90deg);
+}
+.btn__summary {
+  position: absolute;
+  width: 210px;
+  height: 530px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.btn__summary-title {
+  padding-top: 3px;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 180px;
+  border-bottom: 1px solid #9f9f9f;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  background-color: #ffffff;
+}
+.btn__summary-link {
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+.btn__summary-link:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: #F16D7F;
 }
 
 .btn_browse_text {
