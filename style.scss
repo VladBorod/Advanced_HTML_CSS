@@ -154,8 +154,8 @@ body {
         // position: relative;
     }
     &__details summary::before {
-        margin-left: 10px;
-        margin-top: 14px;
+        // margin-left: 10px;
+        // margin-top: 14px;
         content: ' ';
         display: inline-block;
         background: url(img/detailsArrow.png);
@@ -166,8 +166,7 @@ body {
     &__details[open] summary::before {
         transform: rotate(90deg);
     }
-    &__summary {
-        position: absolute;
+    &__summary-menu {
         width: 210px;
         height: 530px;
         background-color: $colorBackgroundMain;
@@ -180,6 +179,7 @@ body {
         align-items: flex-start;
     }
     &__summary-title {
+        position: absolute;
         padding-top: 3px;
         text-decoration: none;
         box-sizing: border-box;
@@ -217,8 +217,8 @@ body {
         border-radius: 5px;
         position: absolute;
         // padding-right: 350px;
-        // right: 50px;
-        // left: auto;
+        right: 50px;
+        left: auto;
     }
     &__product {
         width: 240px;

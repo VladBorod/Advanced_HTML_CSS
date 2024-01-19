@@ -110,8 +110,6 @@ body {
   height: 38px;
 }
 .btn__details summary::before {
-  margin-left: 10px;
-  margin-top: 14px;
   content: " ";
   display: inline-block;
   background: url(img/detailsArrow.png);
@@ -122,8 +120,7 @@ body {
 .btn__details[open] summary::before {
   transform: rotate(90deg);
 }
-.btn__summary {
-  position: absolute;
+.btn__summary-menu {
   width: 210px;
   height: 530px;
   background-color: #ffffff;
@@ -136,6 +133,7 @@ body {
   align-items: flex-start;
 }
 .btn__summary-title {
+  position: absolute;
   padding-top: 3px;
   text-decoration: none;
   box-sizing: border-box;
@@ -172,6 +170,8 @@ body {
   border: 1px solid #4d4d4d;
   border-radius: 5px;
   position: absolute;
+  right: 50px;
+  left: auto;
 }
 .btn-drop-left__product {
   width: 240px;
