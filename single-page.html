@@ -9,14 +9,13 @@
 </head>
 
 <body>
-    <div class="top">
-        <header class="header center">
-            <div class="header_left center">
-                <a class="logo" href="index.html">
-                    <img class="logo_img" src="/img/logo_image.jpg" alt="logo image">BRAN<span class="logo_pink">D</span>
-                </a>
-                <form class="form_header center" action="#">
-                    <button class="btn_browse"><span class="btn_browse_text">Browse</span> 
+    <header class="header center">
+        <div class="header_left center">
+            <a class="logo" href="index.html">
+                <img class="logo_img" src="/img/logo_image.jpg" alt="logo image">BRAN<span class="logo_pink">D</span>
+            </a>
+            <form class="form_header center" action="#">
+                <button class="btn_browse"><span class="btn_browse_text">Browse</span> 
                         <details class="btn__details">
                             <summary class="btn__summary">
                                 <img src="/img/browse_btn_arrow.jpg" alt="browse">
@@ -42,22 +41,24 @@
                             </div>
                         </details>
                     </button>
-                    <input class="input_browse" type="text" placeholder="  Search for items...">
-                    <button class="btn_search" id="btn_search" type="submit"> 
+                <input class="input_browse" type="text" placeholder="  Search for items...">
+                <button class="btn_search" id="btn_search" type="submit"> 
                     <img class="btn_search_img" src="/img/btn_serch.png" alt="">
                 </button>
-                </form>
-            </div>
-            <div class="header_right center">
-                <a class="backet_link" href="#"><img class="backet_img" src="/img/backet_btn.jpg" alt="backet"></a>
-                <button class="btn_account"><div class="btn_my_acc_text">My Account</div>
+            </form>
+        </div>
+        <div class="header_right center">
+            <a class="backet_link" href="#"><img class="backet_img" src="/img/backet_btn.jpg" alt="backet"></a>
+            <button class="btn_account"><div class="btn_my_acc_text">My Account</div>
                     <details class="btn-drop-left">
                     <summary>
                         <img class="btn_arrow_acc" src="/img/browse_btn_arrow_wht.png" alt="arrow">
                     </summary>
                     <div class="btn-drop-left__menu">
                         <div class="btn-drop-left__product">
-                            <img class="btn-drop-left__product-img" src="/img/dropLeftImg1.png" alt="your priduct">
+                            <a href="product.html">
+                                <img class="btn-drop-left__product-img" src="/img/dropLeftImg1.png" alt="your priduct">
+                            </a>
                             <div class="btn-drop-left__product-content">
                                 <h3 class="btn-drop-left__product-h3">Rebox Zane</h3>
                                 <div class="btn-drop-left__product-stars">
@@ -72,7 +73,9 @@
                             <img class="btn-drop-left__product-cross" src="/img/removerImg.png" alt="cross">
                                 </div>
                                 <div class="btn-drop-left__product">
-                            <img class="btn-drop-left__product-img" src="/img/dropLeftImg2.png" alt="your priduct">
+                                    <a href="product.html">
+                                        <img class="btn-drop-left__product-img" src="/img/dropLeftImg2.png" alt="your priduct">
+                                    </a>
                             <div class="btn-drop-left__product-content">
                                 <h3 class="btn-drop-left__product-h3">Rebox Zane</h3>
                                 <div class="btn-drop-left__product-stars">
@@ -91,22 +94,20 @@
                             <h4>$500.00</h4>  
                                 </div>
                                 <div class="btn-drop-left__buttons">
-
-                                    <label class="btn-drop-left__checkout">Checkout</label>
-                    <label class="btn-drop-left__cart">Go to cart</label>
-                                </div>
-                            </div>
-                    </details>
-                </button>
+                                    <a href ="checkout.html" class="btn-drop-left__checkout">Checkout</a>
+                <a href="shopping-cart.html" class="btn-drop-left__cart">Go to cart</a>
             </div>
     </div>
+    </details>
+    </button>
+        </div>
+
     </header>
-    </div>
     <nav class="navigation center">
         <div class="menu center">
             <ul class="menu__parts center">
                 <li class="menu__list">
-                    <a class="menu__link" href="#">HOME</a>
+                    <a class="menu__link" href="index.html">HOME</a>
                 </li>
                 <li class="menu__list">
                     <a class="menu__link" href="#">MAN</a>
@@ -234,13 +235,12 @@
             </ul>
         </div>
     </nav>
-    </div>
     <section class="top-head center">
         <h2 class="top-head__heading">NEW ARRIVALS</h2>
         <ul class="breadcrumbs center">
             <div class="breadcrumbs__ul">
                 <li class="breadcrumbs__li">
-                    <a href="#" class="breadcrumbs__link">HOME</a>
+                    <a href="index.html" class="breadcrumbs__link">HOME</a>
                 </li>
                 <li class="breadcrumbs__li">
                     <a href="#" class="breadcrumbs__link">MENU</a>

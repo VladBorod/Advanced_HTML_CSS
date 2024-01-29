@@ -12,157 +12,232 @@
 </head>
 
 <body>
-    <div class="top">
-        <header class="header center">
-            <div class="header_left center">
-                <a class="logo" href="index.html">
-                    <img class="logo_img" src="/img/logo_image.jpg" alt="logo image">BRAN<span class="logo_pink">D</span>
-                </a>
-                <form class="form_header center" action="#">
-                    <button id="btnDrop1" type="button" class="btn_browse"><div class="btn_browse_text">Browse</div> <img class="btn_arrow" src="/img/browse_btn_arrow.jpg" alt="arrow"></button>
-                    <input class="input_browse" type="text" placeholder="  Search for items...">
-                    <button class="btn_search" id="btn_search" type="submit"> 
-                    <img class="btn_search_img" src="/img/btn_serch.png" alt=""></button>
-                </form>
-            </div>
-            <div class="header_right center">
-                <a class="backet_link" href="#"><img class="backet_img" src="/img/backet_btn.jpg" alt="backet"></a>
-                <button class="btn_account"><div class="btn_my_acc_text">My Account</div><img class="btn_arrow_acc" src="/img/browse_btn_arrow_wht.png" alt="arrow"></button>
-            </div>
-        </header>
-        <nav class="navigation center">
-            <div class="menu center">
-                <ul class="menu__parts center">
-                    <li class="menu__list">
-                        <a class="menu__link" href="#">HOME</a>
-                    </li>
-                    <li class="menu__list">
-                        <a class="menu__link" href="#">MAN</a>
-                    </li>
-                    <li class="menu__list">
-                        <a class="menu__link" href="#">WOMEN</a>
-                        <div class="menu__box">
-                            <div class="menu__elements">
-                                <h3 class="menu__title">Women</h3>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link"> Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <a href="#" class="menu__item_link">Blazers</a>
-                                <a href="#" class="menu__item_link">Denim</a>
-                                <a href="#" class="menu__item_link">Leggings/Pants</a>
-                                <a href="#" class="menu__item_link">Skirts/Shorts</a>
-                                <a href="#" class="menu__item_link">Accessories</a>
+    <header class="header center">
+        <div class="header_left center">
+            <a class="logo" href="index.html">
+                <img class="logo_img" src="/img/logo_image.jpg" alt="logo image">BRAN<span class="logo_pink">D</span>
+            </a>
+            <form class="form_header center" action="#">
+                <button class="btn_browse"><span class="btn_browse_text">Browse</span> 
+                    <details class="btn__details">
+                        <summary class="btn__summary">
+                            <img src="/img/browse_btn_arrow.jpg" alt="browse">
+                        </summary>
+                        <div class="btn__summary-menu">
+                            <h2 class="btn__summary-title">WOMEN</h2>
+                            <a href="#" class="btn__summary-link">Dresses</a>
+                            <a href="#" class="btn__summary-link">Tops</a>
+                            <a href="#" class="btn__summary-link">Sweaters/Knits</a>
+                            <a href="#" class="btn__summary-link">Jackets/Coats</a>
+                            <a href="#" class="btn__summary-link">Blazers</a>
+                            <a href="#" class="btn__summary-link">Denim</a>
+                            <a href="#" class="btn__summary-link">Leggings/Pants</a>
+                            <a href="#" class="btn__summary-link">Skirts/Shorts</a>
+                            <a href="#" class="btn__summary-link">Accessories</a>
+                            <h2 class="btn__summary-title">MEN</h2>
+                            <a href="#" class="btn__summary-link">Tees/Tank tops</a>
+                            <a href="#" class="btn__summary-link">Shirts/Polos</a>
+                            <a href="#" class="btn__summary-link">Sweaters</a>
+                            <a href="#" class="btn__summary-link">Sweatshirts/Hoodies</a>
+                            <a href="#" class="btn__summary-link">Blazers</a>
+                            <a href="#" class="btn__summary-link">Jackets/vests</a>
+                        </div>
+                    </details>
+                </button>
+                <input class="input_browse" type="text" placeholder="  Search for items...">
+                <button class="btn_search" id="btn_search" type="submit"> 
+                <img class="btn_search_img" src="/img/btn_serch.png" alt="">
+            </button>
+            </form>
+        </div>
+        <div class="header_right center">
+            <a class="backet_link" href="#"><img class="backet_img" src="/img/backet_btn.jpg" alt="backet"></a>
+            <button class="btn_account"><div class="btn_my_acc_text">My Account</div>
+                <details class="btn-drop-left">
+                <summary>
+                    <img class="btn_arrow_acc" src="/img/browse_btn_arrow_wht.png" alt="arrow">
+                </summary>
+                <div class="btn-drop-left__menu">
+                    <div class="btn-drop-left__product">
+                        <a href="product.html">
+                            <img class="btn-drop-left__product-img" src="/img/dropLeftImg1.png" alt="your priduct">
+                        </a>
+                        <div class="btn-drop-left__product-content">
+                            <h3 class="btn-drop-left__product-h3">Rebox Zane</h3>
+                            <div class="btn-drop-left__product-stars">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
                             </div>
-                            <div class="menu__elements">
-                                <h3 class="menu__title">Women</h3>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link"> Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <div class="menu__elements menu__add-marg">
+                            <p class="btn-drop-left__product-paraph">1  x   $250</p>
+                        </div>
+                        <img class="btn-drop-left__product-cross" src="/img/removerImg.png" alt="cross">
+                            </div>
+                            <div class="btn-drop-left__product">
+                                <a href="product.html">
+                                    <img class="btn-drop-left__product-img" src="/img/dropLeftImg2.png" alt="your priduct">
+                                </a>
+                        <div class="btn-drop-left__product-content">
+                            <h3 class="btn-drop-left__product-h3">Rebox Zane</h3>
+                            <div class="btn-drop-left__product-stars">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                                <img class="btn-drop-left__product-png" src="/img/accountStar.png" alt="star">
+                            </div>
+                            <p class="btn-drop-left__product-paraph">1  x   $250</p>
+                        </div>
+                        <img class="btn-drop-left__product-cross" src="/img/removerImg.png" alt="cross">
+                            </div>
+                            <div class="btn-drop-left__total">
+                        <h4>TOTAL</h4>
+                        <h4>$500.00</h4>  
+                            </div>
+                            <div class="btn-drop-left__buttons">
+                                <a href ="checkout.html" class="btn-drop-left__checkout">Checkout</a>
+            <a href="shopping-cart.html" class="btn-drop-left__cart">Go to cart</a>
+        </div>
+</div>
+</details>
+</button>
+        </div>
 
-                                    <h3 class="menu__title">Women</h3>
-                                    <a href="#" class="menu__item_link">Dresses</a>
-                                    <a href="#" class="menu__item_link"> Tops</a>
-                                    <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                </div>
-                            </div>
-                            <div class="menu__elements">
+    </header>
+    <nav class="navigation center">
+        <div class="menu center">
+            <ul class="menu__parts center">
+                <li class="menu__list">
+                    <a class="menu__link" href="#">HOME</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="#">MAN</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="#">WOMEN</a>
+                    <div class="menu__box">
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <a href="#" class="menu__item_link">Blazers</a>
+                            <a href="#" class="menu__item_link">Denim</a>
+                            <a href="#" class="menu__item_link">Leggings/Pants</a>
+                            <a href="#" class="menu__item_link">Skirts/Shorts</a>
+                            <a href="#" class="menu__item_link">Accessories</a>
+                        </div>
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <div class="menu__elements menu__add-marg">
+
                                 <h3 class="menu__title">Women</h3>
                                 <a href="#" class="menu__item_link">Dresses</a>
                                 <a href="#" class="menu__item_link"> Tops</a>
                                 <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <img class="menu__img" src="/img/menuRectangleInList.png" alt="man in glasses">
                             </div>
                         </div>
-                    </li>
-                    <li class="menu__list">
-                        <a class="menu__link" href="#">KIDS</a>
-                    </li>
-                    <li class="menu__list menu__last">
-                        <a class="menu__link" href="#">ACCOSERIES</a>
-                        <div class="menu__box">
-                            <div class="menu__elements">
-                                <h3 class="menu__title">Women</h3>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link"> Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <a href="#" class="menu__item_link">Blazers</a>
-                                <a href="#" class="menu__item_link">Denim</a>
-                                <a href="#" class="menu__item_link">Leggings/Pants</a>
-                                <a href="#" class="menu__item_link">Skirts/Shorts</a>
-                                <a href="#" class="menu__item_link">Accessories</a>
-                            </div>
-                            <div class="menu__elements">
-                                <h3 class="menu__title">Women</h3>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link"> Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <div class="menu__elements menu__add-marg">
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <img class="menu__img" src="/img/menuRectangleInList.png" alt="man in glasses">
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="#">KIDS</a>
+                </li>
+                <li class="menu__list menu__last">
+                    <a class="menu__link" href="#">ACCOSERIES</a>
+                    <div class="menu__box">
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <a href="#" class="menu__item_link">Blazers</a>
+                            <a href="#" class="menu__item_link">Denim</a>
+                            <a href="#" class="menu__item_link">Leggings/Pants</a>
+                            <a href="#" class="menu__item_link">Skirts/Shorts</a>
+                            <a href="#" class="menu__item_link">Accessories</a>
+                        </div>
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <div class="menu__elements menu__add-marg">
 
-                                    <h3 class="menu__title">Women</h3>
-                                    <a href="#" class="menu__item_link">Dresses</a>
-                                    <a href="#" class="menu__item_link"> Tops</a>
-                                    <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                </div>
-                            </div>
-                            <div class="menu__elements">
                                 <h3 class="menu__title">Women</h3>
                                 <a href="#" class="menu__item_link">Dresses</a>
                                 <a href="#" class="menu__item_link"> Tops</a>
                                 <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <img class="menu__img" src="/img/menuRectangleInList.png" alt="man in glasses">
                             </div>
                         </div>
-                    </li>
-                    <li class="menu__list menu__last">
-                        <a class="menu__link" href="#">FEATURED</a>
-                        <div class="menu__box">
-                            <div class="menu__elements">
-                                <h3 class="menu__title">Women</h3>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link"> Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <a href="#" class="menu__item_link">Blazers</a>
-                                <a href="#" class="menu__item_link">Denim</a>
-                                <a href="#" class="menu__item_link">Leggings/Pants</a>
-                                <a href="#" class="menu__item_link">Skirts/Shorts</a>
-                                <a href="#" class="menu__item_link">Accessories</a>
-                            </div>
-                            <div class="menu__elements">
-                                <h3 class="menu__title">Women</h3>
-                                <a href="#" class="menu__item_link">Dresses</a>
-                                <a href="#" class="menu__item_link"> Tops</a>
-                                <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <div class="menu__elements menu__add-marg">
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <img class="menu__img" src="/img/menuRectangleInList.png" alt="man in glasses">
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__list menu__last">
+                    <a class="menu__link" href="#">FEATURED</a>
+                    <div class="menu__box">
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <a href="#" class="menu__item_link">Blazers</a>
+                            <a href="#" class="menu__item_link">Denim</a>
+                            <a href="#" class="menu__item_link">Leggings/Pants</a>
+                            <a href="#" class="menu__item_link">Skirts/Shorts</a>
+                            <a href="#" class="menu__item_link">Accessories</a>
+                        </div>
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <div class="menu__elements menu__add-marg">
 
-                                    <h3 class="menu__title">Women</h3>
-                                    <a href="#" class="menu__item_link">Dresses</a>
-                                    <a href="#" class="menu__item_link"> Tops</a>
-                                    <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                </div>
-                            </div>
-                            <div class="menu__elements">
                                 <h3 class="menu__title">Women</h3>
                                 <a href="#" class="menu__item_link">Dresses</a>
                                 <a href="#" class="menu__item_link"> Tops</a>
                                 <a href="#" class="menu__item_link">Sweaters/Knits</a>
-                                <a href="#" class="menu__item_link">Jackets/Coats</a>
-                                <img class="menu__img" src="/img/menuRectangleInList.png" alt="man in glasses">
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                        <div class="menu__elements">
+                            <h3 class="menu__title">Women</h3>
+                            <a href="#" class="menu__item_link">Dresses</a>
+                            <a href="#" class="menu__item_link"> Tops</a>
+                            <a href="#" class="menu__item_link">Sweaters/Knits</a>
+                            <a href="#" class="menu__item_link">Jackets/Coats</a>
+                            <img class="menu__img" src="/img/menuRectangleInList.png" alt="man in glasses">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section class="top-head center">
         <h2 class="top-head__heading">NEW ARRIVALS</h2>
         <div class="breadcrumbs center">
